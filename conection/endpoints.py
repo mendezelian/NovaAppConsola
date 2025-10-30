@@ -3,8 +3,13 @@ from dotenv import load_dotenv
 import os
 import asyncio
 
+#Cargar variables de entorno
+load_dotenv()
+
 #URL de la API
 URL = os.getenv("API_URL")
+
+#Crear el cliente para hacer peticiones asíncronas con httpx
 client = httpx.AsyncClient()
 
 # obtener todos los clientes
@@ -35,6 +40,7 @@ async def getNumSalesMonth():
 async def getTotalSales():
     response = await client.get(f"{URL}/ventas/total")
     return response
+
 #obtener pendientes de envío
 async def getPendingOrders():
     response = await client.get(f"{URL}/ventas/pendientes")
