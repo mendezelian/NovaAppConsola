@@ -1,7 +1,13 @@
 import requests
+import os
+from dotenv import load_dotenv
 
-url = "https://apitechsolutions.duckdns.org"
+load_dotenv()
+URL = os.getenv("API_URL")
 
+#Probar conexión
+#res = requests.get(URL)
+#Consultar clientes
 
-x = requests.get(url)
-print(x.text)
+response = requests.get(f"{URL}/clientes")
+print(response.text)
