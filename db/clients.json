@@ -1,0 +1,25 @@
+{
+  "Clientes": [
+    {
+      "email": "ventas@arkensolutions.com",
+      "id": 14,
+      "name": "ARKEN SOLUTIONS LTDA"
+    },
+    {
+      "email": "pruebamail@gmail.com",
+      "id": 13,
+      "name": "Grupo Arken"
+    },
+    {
+      "email": "ventas@lumber.com",
+      "id": 15,
+      "name": "LUMBER INTERNACIONAL S.L."
+    },
+    {
+      "email": "ventas@validia.com",
+      "id": 16,
+      "name": "VALIDIA GESTIO S.L."
+    }
+  ],
+  "Num clientes": 4
+}
